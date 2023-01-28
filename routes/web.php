@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',[FileUploadController::class, 'index'])->name('home');
+Route::post('/uploadfile',[FileUploadController::class, 'uploadfile'])->name('uploadfile');
+Route::get('/deletefile',[FileUploadController::class, 'DeleteFiles'])->name('DeleteFiles');
